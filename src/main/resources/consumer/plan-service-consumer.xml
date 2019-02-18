@@ -12,5 +12,6 @@
     <dubbo:registry id="plan-service-consumer" protocol="zookeeper" address="zookeeper://47.93.46.162:2181"/>
 
     <dubbo:reference id="dPlanService" timeout="6000" registry="plan-service-consumer" interface="com.plan.api.DPlanService"/>
+    <dubbo:reference id="dUserService" timeout="6000" registry="plan-service-consumer" interface="com.plan.api.DUserService"/>
 
 </beans>
